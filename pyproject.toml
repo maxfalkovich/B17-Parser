@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "b17-profile-collector"
+version = "0.1.0"
+description = "Resumable collector of public B17 professional profiles"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["b17", "parser", "psychologists", "jsonl", "scraping"]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31,<3", "beautifulsoup4>=4.12,<5"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+browser = ["playwright>=1.49,<2"]
+chrome-session = ["browser-cookie3>=0.20,<1"]
+
+[project.scripts]
+b17-parser = "b17_parser.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["b17_parser*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

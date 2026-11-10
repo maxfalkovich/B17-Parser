@@ -1,0 +1,4645 @@
+{
+  "schema_version": 1,
+  "source": {
+    "url": "https://www.b17.ru/psiholog/sankt-peterburg/",
+    "provenance": {
+      "mode": "public_reference_derived_from_saved_controls",
+      "snapshot_date": "2026-11-10",
+      "privacy": "Активные выборы и локальные метаданные удалены."
+    }
+  },
+  "scope": {
+    "source_path": "/psiholog/sankt-peterburg/",
+    "city_id": "143",
+    "city": "Санкт-Петербург",
+    "consultation_catalog": "in_person",
+    "notes": [
+      "Controls and values are observed on the source page, not an exhaustive list for every city or session.",
+      "Sidebar options are separate from additional wizard-only values; the latter require live verification.",
+      "Combining multiple topics or methods is supported by the UI, but AND/OR semantics are not established.",
+      "A selected HTML control confirms a received selection, not matching quality or completeness of the result set."
+    ]
+  },
+  "routes": [
+    {
+      "label": "Личный приём Очно",
+      "url": "https://www.b17.ru/psiholog/sankt-peterburg/",
+      "format": "in_person",
+      "query_parameter": null,
+      "evidence": "catalog_navigation_link"
+    },
+    {
+      "label": "Онлайн-консультация Онлайн",
+      "url": "https://www.b17.ru/online/",
+      "format": "online",
+      "query_parameter": null,
+      "evidence": "catalog_navigation_link"
+    }
+  ],
+  "filters": {
+    "vid": {
+      "parameter": "vid",
+      "label": "Для кого",
+      "role": "filter",
+      "source_control_names": [
+        "f_vid"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step",
+        "master_filter_quick"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "Индивидуально",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step",
+            "master_filter_quick"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Индивидуально",
+            "master_filter_step": "Для меня, индивидуально",
+            "master_filter_quick": "Индивидуальная консультация"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "2",
+          "label": "Семейная консультация",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step",
+            "master_filter_quick"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Семейная консультация",
+            "master_filter_step": "Семейная консультация",
+            "master_filter_quick": "Семейная консультация"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "3",
+          "label": "Для подростка",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step",
+            "master_filter_quick"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Для подростка",
+            "master_filter_step": "Для подростка",
+            "master_filter_quick": "Консультация для подростка"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "4",
+          "label": "Детский психолог",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step",
+            "master_filter_quick"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Детский психолог",
+            "master_filter_step": "Детский психолог",
+            "master_filter_quick": "Работа с детьми"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "5",
+          "label": "Бизнес-консультирование",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step",
+            "master_filter_quick"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Бизнес-консультирование",
+            "master_filter_step": "Бизнес-консультирование",
+            "master_filter_quick": "Бизнес-консультирование"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [
+        {
+          "value": "0",
+          "label": "",
+          "observed_in": [
+            "master_filter_quick"
+          ],
+          "labels_by_control": {
+            "master_filter_quick": ""
+          },
+          "is_default": true,
+          "selected_in": []
+        }
+      ],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        "0"
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [
+        "Additional UI values are not sidebar-verifiable in this snapshot and must not be treated as verified crawler options."
+      ],
+      "control_kind": "radio",
+      "multiple": false,
+      "kind": "enum",
+      "max_values": 1,
+      "verified_selected_values": []
+    },
+    "location": {
+      "parameter": "location",
+      "label": "Район города",
+      "role": "filter",
+      "source_control_names": [
+        "f_location"
+      ],
+      "observed_in": [
+        "master_filter_right"
+      ],
+      "options": [
+        {
+          "value": "",
+          "label": "",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": ""
+          },
+          "is_default": true,
+          "selected_in": []
+        },
+        {
+          "value": "301",
+          "label": "Автово",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Автово"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "345",
+          "label": "Адмиралтейская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Адмиралтейская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "287",
+          "label": "Академическая",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Академическая"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "298",
+          "label": "Балтийская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Балтийская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "321",
+          "label": "Беговая",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Беговая"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "350",
+          "label": "Бухарестская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Бухарестская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "324",
+          "label": "Василеостровская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Василеостровская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "295",
+          "label": "Владимирская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Владимирская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "349",
+          "label": "Волковская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Волковская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "291",
+          "label": "Выборгская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Выборгская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "311",
+          "label": "Горьковская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Горьковская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "325",
+          "label": "Гостиный двор",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Гостиный двор"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "286",
+          "label": "Гражданский проспект",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Гражданский проспект"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "285",
+          "label": "Девяткино",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Девяткино"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "334",
+          "label": "Достоевская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Достоевская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "353",
+          "label": "Дунайская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Дунайская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "328",
+          "label": "Елизаровская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Елизаровская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "347",
+          "label": "Звенигородская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Звенигородская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "319",
+          "label": "Звёздная",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Звёздная"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "300",
+          "label": "Кировский завод",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Кировский завод"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "340",
+          "label": "Комендантский проспект",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Комендантский проспект"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "342",
+          "label": "Крестовский остров",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Крестовский остров"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "320",
+          "label": "Купчино",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Купчино"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "337",
+          "label": "Ладожская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Ладожская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "302",
+          "label": "Ленинский проспект",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Ленинский проспект"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "290",
+          "label": "Лесная",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Лесная"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "335",
+          "label": "Лиговский проспект",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Лиговский проспект"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "329",
+          "label": "Ломоносовская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Ломоносовская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "326",
+          "label": "Маяковская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Маяковская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "351",
+          "label": "Международная",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Международная"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "318",
+          "label": "Московская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Московская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "315",
+          "label": "Московские ворота",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Московские ворота"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "299",
+          "label": "Нарвская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Нарвская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "312",
+          "label": "Невский проспект",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Невский проспект"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "322",
+          "label": "Новокрестовская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Новокрестовская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "336",
+          "label": "Новочеркасская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Новочеркасская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "348",
+          "label": "Обводный канал",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Обводный канал"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "331",
+          "label": "Обухово",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Обухово"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "306",
+          "label": "Озерки",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Озерки"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "317",
+          "label": "Парк Победы",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Парк Победы"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "304",
+          "label": "Парнас",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Парнас"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "310",
+          "label": "Петроградская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Петроградская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "308",
+          "label": "Пионерская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Пионерская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "327",
+          "label": "Площадь Александра Невского",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Площадь Александра Невского"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "294",
+          "label": "Площадь Восстания",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Площадь Восстания"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "292",
+          "label": "Площадь Ленина",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Площадь Ленина"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "289",
+          "label": "Площадь Мужества",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Площадь Мужества"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "288",
+          "label": "Политехническая",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Политехническая"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "323",
+          "label": "Приморская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Приморская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "330",
+          "label": "Пролетарская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Пролетарская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "338",
+          "label": "Проспект Большевиков",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проспект Большевиков"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "303",
+          "label": "Проспект Ветеранов",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проспект Ветеранов"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "305",
+          "label": "Проспект Просвещения",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проспект Просвещения"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "352",
+          "label": "Проспект Славы",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проспект Славы"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "296",
+          "label": "Пушкинская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Пушкинская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "332",
+          "label": "Рыбацкое",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Рыбацкое"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "346",
+          "label": "Садовая",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Садовая"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "313",
+          "label": "Сенная площадь",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Сенная площадь"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "333",
+          "label": "Спасская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Спасская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "344",
+          "label": "Спортивная",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Спортивная"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "341",
+          "label": "Старая Деревня",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Старая Деревня"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "297",
+          "label": "Технологический институт",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Технологический институт"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "307",
+          "label": "Удельная",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Удельная"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "339",
+          "label": "Улица Дыбенко",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Улица Дыбенко"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "314",
+          "label": "Фрунзенская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Фрунзенская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "293",
+          "label": "Чернышевская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Чернышевская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "309",
+          "label": "Чёрная речка",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Чёрная речка"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "343",
+          "label": "Чкаловская",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Чкаловская"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "354",
+          "label": "Шушары",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Шушары"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "316",
+          "label": "Электросила",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Электросила"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "359",
+          "label": "Всеволожск",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Всеволожск"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "358",
+          "label": "Колпино",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Колпино"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "356",
+          "label": "Красное село",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Красное село"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "355",
+          "label": "Петергоф",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Петергоф"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "357",
+          "label": "Пушкин",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Пушкин"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "360",
+          "label": "Сестрорецк",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Сестрорецк"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        ""
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "select",
+      "multiple": true,
+      "kind": "multi_enum",
+      "multi_value_encoding": {
+        "query_separator": ",",
+        "evidence": "site JavaScript reads comma-delimited selections; form submission joins repeated values with spaces",
+        "boolean_combination": "unknown"
+      },
+      "max_values": null,
+      "verified_selected_values": []
+    },
+    "price1": {
+      "parameter": "price1",
+      "label": "Стоимость: от",
+      "role": "filter",
+      "source_control_names": [
+        "f_price1"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "-",
+          "label": "-",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "-"
+          },
+          "is_default": true,
+          "selected_in": []
+        },
+        {
+          "value": "500",
+          "label": "500",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "500"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "1000",
+          "label": "1000",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "1000",
+            "master_filter_step": "от 1000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "1500",
+          "label": "1500",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "1500",
+            "master_filter_step": "от 1500 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "2000",
+          "label": "2000",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "2000",
+            "master_filter_step": "от 2000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "3000",
+          "label": "3000",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "3000",
+            "master_filter_step": "от 3000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "5000",
+          "label": "5000",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "5000",
+            "master_filter_step": "от 5000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        "-"
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [
+        "The site exposes discrete thresholds; do not invent unsupported amounts or silently round a user budget."
+      ],
+      "control_kind": "select",
+      "multiple": false,
+      "kind": "enum",
+      "max_values": 1,
+      "unit": "RUB",
+      "bound": "minimum",
+      "verified_selected_values": []
+    },
+    "price2": {
+      "parameter": "price2",
+      "label": "Стоимость: до",
+      "role": "filter",
+      "source_control_names": [
+        "f_price2"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "-",
+          "label": "-",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "-"
+          },
+          "is_default": true,
+          "selected_in": []
+        },
+        {
+          "value": "1000",
+          "label": "1000",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "1000"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "1500",
+          "label": "1500",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "1500",
+            "master_filter_step": "до 1500 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "2000",
+          "label": "2000",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "2000",
+            "master_filter_step": "до 2000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "3000",
+          "label": "3000",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "3000",
+            "master_filter_step": "до 3000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "5000",
+          "label": "5000",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "5000",
+            "master_filter_step": "до 5000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "7000",
+          "label": "7000",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "7000"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [
+        {
+          "value": "2500",
+          "label": "до 2500 рублей (средняя)",
+          "observed_in": [
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_step": "до 2500 рублей (средняя)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "4500",
+          "label": "до 4500 рублей (средняя для семейной)",
+          "observed_in": [
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_step": "до 4500 рублей (средняя для семейной)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "6000",
+          "label": "до 6000 рублей",
+          "observed_in": [
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_step": "до 6000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "8000",
+          "label": "до 8000 рублей",
+          "observed_in": [
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_step": "до 8000 рублей"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        "-"
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [
+        "The site exposes discrete thresholds; do not invent unsupported amounts or silently round a user budget.",
+        "Additional UI values are not sidebar-verifiable in this snapshot and must not be treated as verified crawler options."
+      ],
+      "control_kind": "select",
+      "multiple": false,
+      "kind": "enum",
+      "max_values": 1,
+      "unit": "RUB",
+      "bound": "maximum",
+      "verified_selected_values": []
+    },
+    "vopros": {
+      "parameter": "vopros",
+      "label": "Мой вопрос",
+      "role": "filter",
+      "source_control_names": [
+        "f_vopros"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "73",
+          "label": "Депрессивное состояние",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Депрессивное состояние",
+            "master_filter_step": "Депрессивное состояние"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "94",
+          "label": "Низкая самооценка",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Низкая самооценка",
+            "master_filter_step": "Низкая самооценка"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "91",
+          "label": "Секс, сексуальность",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Секс, сексуальность",
+            "master_filter_step": "Секс, сексуальность"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "72",
+          "label": "Панические атаки, тревога",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Панические атаки, тревога",
+            "master_filter_step": "Панические атаки, тревога"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "67",
+          "label": "Семейные проблемы",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Семейные проблемы",
+            "master_filter_step": "Семейные проблемы"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "66",
+          "label": "Трудности в построении отношений",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Трудности в построении отношений",
+            "master_filter_step": "Трудности в построении отношений"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "78",
+          "label": "Нарушение пищевого поведения",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Нарушение пищевого поведения",
+            "master_filter_step": "Нарушение пищевого поведения"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "92",
+          "label": "Отношения с окружающими",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Отношения с окружающими",
+            "master_filter_step": "Отношения с окружающими"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "74",
+          "label": "Принятие решения, постановка цели",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Принятие решения, постановка цели",
+            "master_filter_step": "Принятие решения, постановка цели"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "110",
+          "label": "Созависимость, зависимость в отношениях",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Созависимость, зависимость в отношениях",
+            "master_filter_step": "Созависимость, зависимость в отношениях"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "68",
+          "label": "Психосоматика",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психосоматика",
+            "master_filter_step": "Психосоматика"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "169",
+          "label": "Проблемы с пониманием своих желаний (узнать себя)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проблемы с пониманием своих желаний (узнать себя)",
+            "master_filter_step": "Проблемы с пониманием своих желаний (узнать себя)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "82",
+          "label": "Психическое расстройство",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психическое расстройство",
+            "master_filter_step": "Психическое расстройство"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "75",
+          "label": "Страхи и фобии",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Страхи и фобии",
+            "master_filter_step": "Страхи и фобии"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "164",
+          "label": "Выгорание (эмоциональное, профессиональное)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Выгорание (эмоциональное, профессиональное)",
+            "master_filter_step": "Выгорание (эмоциональное, профессиональное)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "162",
+          "label": "Неврозы и эмоциональные расстройства",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Неврозы и эмоциональные расстройства",
+            "master_filter_step": "Неврозы и эмоциональные расстройства"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "76",
+          "label": "Вредные привычки",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Вредные привычки",
+            "master_filter_step": "Вредные привычки"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "88",
+          "label": "Одиночество",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Одиночество",
+            "master_filter_step": "Одиночество"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "71",
+          "label": "Травма насилия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Травма насилия",
+            "master_filter_step": "Травма насилия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "93",
+          "label": "Навязчивое поведение, мысли",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Навязчивое поведение, мысли",
+            "master_filter_step": "Навязчивое поведение, мысли"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "77",
+          "label": "Эмоциональная зависимость",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Эмоциональная зависимость",
+            "master_filter_step": "Эмоциональная зависимость"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "84",
+          "label": "Помощь подростку",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Помощь подростку",
+            "master_filter_step": "Помощь подростку"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "65",
+          "label": "Проблемы с детьми",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проблемы с детьми",
+            "master_filter_step": "Проблемы с детьми"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "100",
+          "label": "Профориентация",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Профориентация",
+            "master_filter_step": "Профориентация"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "171",
+          "label": "Социальная адаптация, социофобия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Социальная адаптация, социофобия",
+            "master_filter_step": "Социальная адаптация, социофобия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "69",
+          "label": "Развод",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Развод",
+            "master_filter_step": "Развод"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "70",
+          "label": "Смерть близкого человека",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Смерть близкого человека",
+            "master_filter_step": "Смерть близкого человека"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "168",
+          "label": "Взрослые дети и родители (взаимоотношения)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Взрослые дети и родители (взаимоотношения)",
+            "master_filter_step": "Взрослые дети и родители (взаимоотношения)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "161",
+          "label": "Агрессивность, приступы гнева",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Агрессивность, приступы гнева",
+            "master_filter_step": "Агрессивность, приступы гнева"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "81",
+          "label": "Психологическая поддержка",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психологическая поддержка",
+            "master_filter_step": "Психологическая поддержка"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "114",
+          "label": "Стресс",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Стресс",
+            "master_filter_step": "Стресс"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "90",
+          "label": "Суицидальное поведение",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Суицидальное поведение",
+            "master_filter_step": "Суицидальное поведение"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "80",
+          "label": "Проблемы с деньгами",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проблемы с деньгами",
+            "master_filter_step": "Проблемы с деньгами"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "170",
+          "label": "Проявление желаний и отстаивание собственного мнения",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Проявление желаний и отстаивание собственного мнения",
+            "master_filter_step": "Проявление желаний и отстаивание собственного мнения"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "167",
+          "label": "Помощь в проживании кризисов",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Помощь в проживании кризисов",
+            "master_filter_step": "Помощь в проживании кризисов"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "87",
+          "label": "Измена",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Измена",
+            "master_filter_step": "Измена"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "85",
+          "label": "Нарушения сна, бессонница",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Нарушения сна, бессонница",
+            "master_filter_step": "Нарушения сна, бессонница"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "86",
+          "label": "Беременность и роды",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Беременность и роды",
+            "master_filter_step": "Беременность и роды"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "165",
+          "label": "Конфликты (в семье и на работе)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Конфликты (в семье и на работе)",
+            "master_filter_step": "Конфликты (в семье и на работе)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "83",
+          "label": "Бедность эмоциональной жизни",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Бедность эмоциональной жизни",
+            "master_filter_step": "Бедность эмоциональной жизни"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "89",
+          "label": "Ревность",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Ревность",
+            "master_filter_step": "Ревность"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "163",
+          "label": "Кризис среднего возраста",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Кризис среднего возраста",
+            "master_filter_step": "Кризис среднего возраста"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "166",
+          "label": "Повторяющиеся родовые сценарии",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Повторяющиеся родовые сценарии",
+            "master_filter_step": "Повторяющиеся родовые сценарии"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "79",
+          "label": "Сложности в бизнесе",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Сложности в бизнесе",
+            "master_filter_step": "Сложности в бизнесе"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "136",
+          "label": "Сновидения, анализ сновидений",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Сновидения, анализ сновидений",
+            "master_filter_step": "Сновидения, анализ сновидений"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "95",
+          "label": "Сопровождение тяжелобольного",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Сопровождение тяжелобольного",
+            "master_filter_step": "Сопровождение тяжелобольного"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "checkbox",
+      "multiple": true,
+      "kind": "multi_enum",
+      "multi_value_encoding": {
+        "query_separator": ",",
+        "evidence": "site JavaScript reads comma-delimited selections; form submission joins repeated values with spaces",
+        "boolean_combination": "unknown"
+      },
+      "max_values": null,
+      "verified_selected_values": []
+    },
+    "metod": {
+      "parameter": "metod",
+      "label": "Методы",
+      "role": "filter",
+      "source_control_names": [
+        "f_metod"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "19",
+          "label": "Гештальт-терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Гештальт-терапия",
+            "master_filter_step": "Гештальт-терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "97",
+          "label": "Когнитивно-поведенческая терапия (КПТ)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Когнитивно-поведенческая терапия (КПТ)",
+            "master_filter_step": "Когнитивно-поведенческая терапия (КПТ)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "18",
+          "label": "Арт-терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Арт-терапия",
+            "master_filter_step": "Арт-терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "24",
+          "label": "Коучинг",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Коучинг",
+            "master_filter_step": "Коучинг"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "138",
+          "label": "Клиническая психология",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Клиническая психология",
+            "master_filter_step": "Клиническая психология"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "31",
+          "label": "Психоаналитическая терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психоаналитическая терапия",
+            "master_filter_step": "Психоаналитическая терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "119",
+          "label": "Десенсибилизация и переработка с помощью движений глаз (ДПДГ / EMDR)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Десенсибилизация и переработка с помощью движений глаз (ДПДГ / EMDR)",
+            "master_filter_step": "Десенсибилизация и переработка с помощью движений глаз (ДПДГ / EMDR)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "115",
+          "label": "Метафорические ассоциативные карты (МАК)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Метафорические ассоциативные карты (МАК)",
+            "master_filter_step": "Метафорические ассоциативные карты (МАК)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "41",
+          "label": "Телесно-ориентированная терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Телесно-ориентированная терапия",
+            "master_filter_step": "Телесно-ориентированная терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "37",
+          "label": "Системная семейная терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Системная семейная терапия",
+            "master_filter_step": "Системная семейная терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "42",
+          "label": "Транзактный анализ",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Транзактный анализ",
+            "master_filter_step": "Транзактный анализ"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "45",
+          "label": "Эмоционально-образная терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Эмоционально-образная терапия",
+            "master_filter_step": "Эмоционально-образная терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "107",
+          "label": "Терапия принятия и ответственности (АСТ)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Терапия принятия и ответственности (АСТ)",
+            "master_filter_step": "Терапия принятия и ответственности (АСТ)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "36",
+          "label": "Символдрама",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Символдрама",
+            "master_filter_step": "Символдрама"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "98",
+          "label": "Схема-терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Схема-терапия",
+            "master_filter_step": "Схема-терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "20",
+          "label": "Гипнотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Гипнотерапия",
+            "master_filter_step": "Гипнотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "27",
+          "label": "Нейролингвистическое программирование (НЛП)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Нейролингвистическое программирование (НЛП)",
+            "master_filter_step": "Нейролингвистическое программирование (НЛП)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "30",
+          "label": "Психоанализ (классический)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психоанализ (классический)",
+            "master_filter_step": "Психоанализ (классический)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "44",
+          "label": "Экзистенциальная психотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Экзистенциальная психотерапия",
+            "master_filter_step": "Экзистенциальная психотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "64",
+          "label": "Перинатальная психология",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Перинатальная психология",
+            "master_filter_step": "Перинатальная психология"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "32",
+          "label": "Психодрама",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психодрама",
+            "master_filter_step": "Психодрама"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "38",
+          "label": "Системные расстановки",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Системные расстановки",
+            "master_filter_step": "Системные расстановки"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "46",
+          "label": "Юнгианский анализ",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Юнгианский анализ",
+            "master_filter_step": "Юнгианский анализ"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "22",
+          "label": "Песочная терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Песочная терапия",
+            "master_filter_step": "Песочная терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "28",
+          "label": "Поведенческая психотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Поведенческая психотерапия",
+            "master_filter_step": "Поведенческая психотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "29",
+          "label": "Позитивная психотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Позитивная психотерапия",
+            "master_filter_step": "Позитивная психотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "25",
+          "label": "Клиент-центрированная терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Клиент-центрированная терапия",
+            "master_filter_step": "Клиент-центрированная терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "35",
+          "label": "Сказкотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Сказкотерапия",
+            "master_filter_step": "Сказкотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "23",
+          "label": "Когнитивная терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Когнитивная терапия",
+            "master_filter_step": "Когнитивная терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "34",
+          "label": "Рационально-эмоционально-поведенческая терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Рационально-эмоционально-поведенческая терапия",
+            "master_filter_step": "Рационально-эмоционально-поведенческая терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "62",
+          "label": "Интегральное нейропрограммирование (Ковалев С.В.)",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Интегральное нейропрограммирование (Ковалев С.В.)",
+            "master_filter_step": "Интегральное нейропрограммирование (Ковалев С.В.)"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "43",
+          "label": "Трансперсональная психотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Трансперсональная психотерапия",
+            "master_filter_step": "Трансперсональная психотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "26",
+          "label": "Логотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Логотерапия",
+            "master_filter_step": "Логотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "40",
+          "label": "Танцевально-двигательная терапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Танцевально-двигательная терапия",
+            "master_filter_step": "Танцевально-двигательная терапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "33",
+          "label": "Психосинтез",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психосинтез",
+            "master_filter_step": "Психосинтез"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "39",
+          "label": "Танатотерапия",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Танатотерапия",
+            "master_filter_step": "Танатотерапия"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "21",
+          "label": "Индивидуальная психология А. Адлера",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Индивидуальная психология А. Адлера",
+            "master_filter_step": "Индивидуальная психология А. Адлера"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "checkbox",
+      "multiple": true,
+      "kind": "multi_enum",
+      "multi_value_encoding": {
+        "query_separator": ",",
+        "evidence": "site JavaScript reads comma-delimited selections; form submission joins repeated values with spaces",
+        "boolean_combination": "unknown"
+      },
+      "max_values": null,
+      "verified_selected_values": []
+    },
+    "sex": {
+      "parameter": "sex",
+      "label": "Пол",
+      "role": "filter",
+      "source_control_names": [
+        "f_sex"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "Любой",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Любой",
+            "master_filter_step": "показать всех"
+          },
+          "is_default": true,
+          "selected_in": []
+        },
+        {
+          "value": "2",
+          "label": "Жен",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Жен",
+            "master_filter_step": "Женщина"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "1",
+          "label": "Муж",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Муж",
+            "master_filter_step": "Мужчина"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        "0"
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "radio",
+      "multiple": false,
+      "kind": "enum",
+      "max_values": 1,
+      "verified_selected_values": []
+    },
+    "spec": {
+      "parameter": "spec",
+      "label": "Образование",
+      "role": "filter",
+      "source_control_names": [
+        "f_spec"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "",
+          "label": "",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": ""
+          },
+          "is_default": true,
+          "selected_in": []
+        },
+        {
+          "value": "1",
+          "label": "Психолог",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Психолог",
+            "master_filter_step": "Психолог"
+          },
+          "is_default": false,
+          "selected_in": []
+        },
+        {
+          "value": "2",
+          "label": "Врач-психотерапевт",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Врач-психотерапевт",
+            "master_filter_step": "Врач-психотерапевт"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [
+        {
+          "value": "0",
+          "label": "показать всех",
+          "observed_in": [
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_step": "показать всех"
+          },
+          "is_default": true,
+          "selected_in": []
+        }
+      ],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        "",
+        "0"
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [
+        "Additional UI values are not sidebar-verifiable in this snapshot and must not be treated as verified crawler options."
+      ],
+      "control_kind": "select",
+      "multiple": false,
+      "kind": "enum",
+      "max_values": 1,
+      "verified_selected_values": []
+    },
+    "video": {
+      "parameter": "video",
+      "label": "Видеоприветствие",
+      "role": "filter",
+      "source_control_names": [
+        "f_video"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "Видеоприветствие",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Видеоприветствие",
+            "master_filter_step": "Есть видеоприветствие*"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "checkbox",
+      "multiple": false,
+      "kind": "boolean",
+      "max_values": 1,
+      "verified_selected_values": []
+    },
+    "cotherapist": {
+      "parameter": "cotherapist",
+      "label": "Ко-терапевты",
+      "role": "filter",
+      "source_control_names": [
+        "f_cotherapist"
+      ],
+      "observed_in": [
+        "master_filter_right"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "Ко-терапевты",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Ко-терапевты"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "checkbox",
+      "multiple": false,
+      "kind": "boolean",
+      "max_values": 1,
+      "verified_selected_values": []
+    },
+    "club_100": {
+      "parameter": "club_100",
+      "label": "«Клуб 100»",
+      "role": "filter",
+      "source_control_names": [
+        "f_club_100"
+      ],
+      "observed_in": [
+        "master_filter_right",
+        "master_filter_step"
+      ],
+      "options": [
+        {
+          "value": "1",
+          "label": "«Клуб 100»",
+          "observed_in": [
+            "master_filter_right",
+            "master_filter_step"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "«Клуб 100»",
+            "master_filter_step": "Только «Клуб-100»"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "checkbox",
+      "multiple": false,
+      "kind": "boolean",
+      "max_values": 1,
+      "verified_selected_values": []
+    },
+    "byfoto": {
+      "parameter": "byfoto",
+      "label": "Вид списка",
+      "role": "display",
+      "source_control_names": [
+        "f_byfoto"
+      ],
+      "observed_in": [
+        "master_filter_right"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "Подробный",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Подробный"
+          },
+          "is_default": true,
+          "selected_in": [],
+          "crawl_compatible": true
+        },
+        {
+          "value": "1",
+          "label": "Только фото",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Только фото"
+          },
+          "is_default": false,
+          "selected_in": [],
+          "crawl_compatible": false
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        "0"
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [
+        "Photo-only view is exposed by B17 but is not supported by the profile-card crawler; use byfoto=0 or omit it."
+      ],
+      "control_kind": "radio",
+      "multiple": false,
+      "kind": "enum",
+      "max_values": 1,
+      "unsupported_crawl_values": [
+        "1"
+      ],
+      "verified_selected_values": []
+    },
+    "sort": {
+      "parameter": "sort",
+      "label": "Порядок",
+      "role": "sort",
+      "source_control_names": [
+        "f_sort"
+      ],
+      "observed_in": [
+        "master_filter_right"
+      ],
+      "options": [
+        {
+          "value": "0",
+          "label": "По рейтингу",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "По рейтингу"
+          },
+          "is_default": true,
+          "selected_in": []
+        },
+        {
+          "value": "2",
+          "label": "Числу обращений",
+          "observed_in": [
+            "master_filter_right"
+          ],
+          "labels_by_control": {
+            "master_filter_right": "Числу обращений"
+          },
+          "is_default": false,
+          "selected_in": []
+        }
+      ],
+      "ui_additional_values": [],
+      "selected_values": [],
+      "selected_control_values": [],
+      "default_values": [
+        "0"
+      ],
+      "query_mapping_evidence": "f_ prefix convention; each requested value must be verified in returned HTML",
+      "crawl_compatible": true,
+      "value_type": "enum",
+      "notes": [],
+      "control_kind": "radio",
+      "multiple": false,
+      "kind": "enum",
+      "max_values": 1,
+      "verified_selected_values": []
+    },
+    "tag": {
+      "parameter": "tag",
+      "label": "Найти специалиста",
+      "role": "filter",
+      "kind": "text",
+      "value_type": "text",
+      "multiple": false,
+      "source_control_names": [
+        "tag"
+      ],
+      "observed_in": [
+        "catalog_search_form"
+      ],
+      "options": [],
+      "ui_additional_values": [],
+      "default_values": [
+        ""
+      ],
+      "selected_values": [],
+      "selected_control_values": [],
+      "minimum_length": 3,
+      "min_length": 3,
+      "max_values": 1,
+      "query_mapping_evidence": "GET form input name=tag; dedicated response verifier is implemented, live behavior remains unverified",
+      "crawl_compatible": true,
+      "form_method": "get",
+      "notes": [
+        "Text search must be compared with the returned search-input value; its live behavior has not been verified. It is not a replacement for semantic analysis of full profiles."
+      ]
+    }
+  },
+  "route_controls": [
+    {
+      "control_name": "frmt",
+      "label": "Очно в Санкт-Петербурге",
+      "query_parameter": null,
+      "role": "catalog_route_switch",
+      "notes": [
+        "This UI switch changes the catalog route; do not send frmt as a query parameter."
+      ]
+    },
+    {
+      "control_name": "frmt",
+      "label": "Онлайн",
+      "query_parameter": null,
+      "role": "catalog_route_switch",
+      "notes": [
+        "This UI switch changes the catalog route; do not send frmt as a query parameter."
+      ]
+    }
+  ],
+  "internal_controls": [
+    {
+      "name": "f_mod",
+      "value": "masters_real",
+      "query_parameter": null,
+      "role": "internal_context"
+    },
+    {
+      "name": "f_city",
+      "value": "143",
+      "query_parameter": null,
+      "role": "internal_context"
+    }
+  ],
+  "unsupported_controls": [],
+  "cities": [
+    {
+      "label": "Москва",
+      "url": "https://www.b17.ru/psiholog/moskva/",
+      "slug": "moskva",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Санкт-Петербург",
+      "url": "https://www.b17.ru/psiholog/sankt-peterburg/",
+      "slug": "sankt-peterburg",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Краснодар",
+      "url": "https://www.b17.ru/psiholog/krasnodar/",
+      "slug": "krasnodar",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Минск",
+      "url": "https://www.b17.ru/psiholog/minsk/",
+      "slug": "minsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Екатеринбург",
+      "url": "https://www.b17.ru/psiholog/ekaterinburg/",
+      "slug": "ekaterinburg",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новосибирск",
+      "url": "https://www.b17.ru/psiholog/novosibirsk/",
+      "slug": "novosibirsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ростов-на-Дону",
+      "url": "https://www.b17.ru/psiholog/rostov-na-donu/",
+      "slug": "rostov-na-donu",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нижний Новгород",
+      "url": "https://www.b17.ru/psiholog/nijniy_novgorod/",
+      "slug": "nijniy_novgorod",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Казань",
+      "url": "https://www.b17.ru/psiholog/kazan/",
+      "slug": "kazan",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Воронеж",
+      "url": "https://www.b17.ru/psiholog/voronej/",
+      "slug": "voronej",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Абакан",
+      "url": "https://www.b17.ru/psiholog/abakan/",
+      "slug": "abakan",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Адлер",
+      "url": "https://www.b17.ru/psiholog/adler/",
+      "slug": "adler",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Алматы",
+      "url": "https://www.b17.ru/psiholog/almaty/",
+      "slug": "almaty",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Альметьевск",
+      "url": "https://www.b17.ru/psiholog/almetevsk/",
+      "slug": "almetevsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Амстердам",
+      "url": "https://www.b17.ru/psiholog/amsterdam/",
+      "slug": "amsterdam",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Анапа",
+      "url": "https://www.b17.ru/psiholog/anapa/",
+      "slug": "anapa",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ангарск",
+      "url": "https://www.b17.ru/psiholog/angarsk/",
+      "slug": "angarsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Анталья",
+      "url": "https://www.b17.ru/psiholog/antalya/",
+      "slug": "antalya",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Арзамас",
+      "url": "https://www.b17.ru/psiholog/arzamas/",
+      "slug": "arzamas",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Армавир",
+      "url": "https://www.b17.ru/psiholog/armavir/",
+      "slug": "armavir",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Архангельск",
+      "url": "https://www.b17.ru/psiholog/arhangelsk/",
+      "slug": "arhangelsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Астана",
+      "url": "https://www.b17.ru/psiholog/astana/",
+      "slug": "astana",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Астрахань",
+      "url": "https://www.b17.ru/psiholog/astrahan/",
+      "slug": "astrahan",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ачинск",
+      "url": "https://www.b17.ru/psiholog/achinsk/",
+      "slug": "achinsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Баку",
+      "url": "https://www.b17.ru/psiholog/baku/",
+      "slug": "baku",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Балаково",
+      "url": "https://www.b17.ru/psiholog/balakovo/",
+      "slug": "balakovo",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Балашиха",
+      "url": "https://www.b17.ru/psiholog/balashiha/",
+      "slug": "balashiha",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Барановичи",
+      "url": "https://www.b17.ru/psiholog/baranovichi/",
+      "slug": "baranovichi",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Барнаул",
+      "url": "https://www.b17.ru/psiholog/barnaul/",
+      "slug": "barnaul",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Барселона",
+      "url": "https://www.b17.ru/psiholog/barcelona/",
+      "slug": "barcelona",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Батайск",
+      "url": "https://www.b17.ru/psiholog/bataysk/",
+      "slug": "bataysk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Батуми",
+      "url": "https://www.b17.ru/psiholog/batumi/",
+      "slug": "batumi",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Белгород",
+      "url": "https://www.b17.ru/psiholog/belgorod/",
+      "slug": "belgorod",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Белград",
+      "url": "https://www.b17.ru/psiholog/belgrad/",
+      "slug": "belgrad",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Бердск",
+      "url": "https://www.b17.ru/psiholog/berdsk/",
+      "slug": "berdsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Берлин",
+      "url": "https://www.b17.ru/psiholog/berlin/",
+      "slug": "berlin",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Бийск",
+      "url": "https://www.b17.ru/psiholog/biysk/",
+      "slug": "biysk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Бишкек",
+      "url": "https://www.b17.ru/psiholog/bishkek/",
+      "slug": "bishkek",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Благовещенск",
+      "url": "https://www.b17.ru/psiholog/blagoveschensk/",
+      "slug": "blagoveschensk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Бобруйск",
+      "url": "https://www.b17.ru/psiholog/bobruysk/",
+      "slug": "bobruysk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Борисов",
+      "url": "https://www.b17.ru/psiholog/borisov/",
+      "slug": "borisov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Братск",
+      "url": "https://www.b17.ru/psiholog/bratsk/",
+      "slug": "bratsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Брест",
+      "url": "https://www.b17.ru/psiholog/brest/",
+      "slug": "brest",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Брянск",
+      "url": "https://www.b17.ru/psiholog/bryansk/",
+      "slug": "bryansk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Будва",
+      "url": "https://www.b17.ru/psiholog/budva/",
+      "slug": "budva",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Буэнос Айрес",
+      "url": "https://www.b17.ru/psiholog/buenos_ayres/",
+      "slug": "buenos_ayres",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Валенсия",
+      "url": "https://www.b17.ru/psiholog/valensiya/",
+      "slug": "valensiya",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Варшава",
+      "url": "https://www.b17.ru/psiholog/warsawa/",
+      "slug": "warsawa",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Великий Новгород",
+      "url": "https://www.b17.ru/psiholog/velikiy_novgorod/",
+      "slug": "velikiy_novgorod",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Верхняя Пышма",
+      "url": "https://www.b17.ru/psiholog/verhnyaya_pyshma/",
+      "slug": "verhnyaya_pyshma",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Видное",
+      "url": "https://www.b17.ru/psiholog/vidnoe/",
+      "slug": "vidnoe",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Вильнюс",
+      "url": "https://www.b17.ru/psiholog/vilnyus/",
+      "slug": "vilnyus",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Витебск",
+      "url": "https://www.b17.ru/psiholog/vitebsk/",
+      "slug": "vitebsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Владивосток",
+      "url": "https://www.b17.ru/psiholog/vladivostok/",
+      "slug": "vladivostok",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Владикавказ",
+      "url": "https://www.b17.ru/psiholog/vladikavkaz/",
+      "slug": "vladikavkaz",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Владимир",
+      "url": "https://www.b17.ru/psiholog/vladimir/",
+      "slug": "vladimir",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Волгоград",
+      "url": "https://www.b17.ru/psiholog/volgograd/",
+      "slug": "volgograd",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Волгодонск",
+      "url": "https://www.b17.ru/psiholog/volgodonsk/",
+      "slug": "volgodonsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Волжский",
+      "url": "https://www.b17.ru/psiholog/voljskiy/",
+      "slug": "voljskiy",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Вологда",
+      "url": "https://www.b17.ru/psiholog/vologda/",
+      "slug": "vologda",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Воскресенск",
+      "url": "https://www.b17.ru/psiholog/voskresensk/",
+      "slug": "voskresensk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Вроцлав",
+      "url": "https://www.b17.ru/psiholog/vrotslav/",
+      "slug": "vrotslav",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Выборг",
+      "url": "https://www.b17.ru/psiholog/vyborg/",
+      "slug": "vyborg",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Гатчина",
+      "url": "https://www.b17.ru/psiholog/gatchina/",
+      "slug": "gatchina",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Гданьск",
+      "url": "https://www.b17.ru/psiholog/gdansk/",
+      "slug": "gdansk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Геленджик",
+      "url": "https://www.b17.ru/psiholog/gelendjik/",
+      "slug": "gelendjik",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Гомель",
+      "url": "https://www.b17.ru/psiholog/gomel/",
+      "slug": "gomel",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Горячий ключ",
+      "url": "https://www.b17.ru/psiholog/goryachiy_klyuch/",
+      "slug": "goryachiy_klyuch",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Гродно",
+      "url": "https://www.b17.ru/psiholog/grodno/",
+      "slug": "grodno",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Дананг",
+      "url": "https://www.b17.ru/psiholog/danang/",
+      "slug": "danang",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Дзержинск",
+      "url": "https://www.b17.ru/psiholog/dzerjinsk/",
+      "slug": "dzerjinsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Димитровград",
+      "url": "https://www.b17.ru/psiholog/dimitrovgrad/",
+      "slug": "dimitrovgrad",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Дмитров",
+      "url": "https://www.b17.ru/psiholog/dmitrov/",
+      "slug": "dmitrov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Днепр (Днепропетровск)",
+      "url": "https://www.b17.ru/psiholog/dnepropetrovsk/",
+      "slug": "dnepropetrovsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Долгопрудный",
+      "url": "https://www.b17.ru/psiholog/dolgoprudnyy_moskva/",
+      "slug": "dolgoprudnyy_moskva",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Домодедово",
+      "url": "https://www.b17.ru/psiholog/domodedovo/",
+      "slug": "domodedovo",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Донецк",
+      "url": "https://www.b17.ru/psiholog/donetsk/",
+      "slug": "donetsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Дубай",
+      "url": "https://www.b17.ru/psiholog/dubay/",
+      "slug": "dubay",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Дубна",
+      "url": "https://www.b17.ru/psiholog/dubna/",
+      "slug": "dubna",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Евпатория",
+      "url": "https://www.b17.ru/psiholog/evpatoriya/",
+      "slug": "evpatoriya",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Егорьевск",
+      "url": "https://www.b17.ru/psiholog/egorevsk/",
+      "slug": "egorevsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ейск",
+      "url": "https://www.b17.ru/psiholog/eysk/",
+      "slug": "eysk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ереван",
+      "url": "https://www.b17.ru/psiholog/erevan/",
+      "slug": "erevan",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ессентуки",
+      "url": "https://www.b17.ru/psiholog/essentuki/",
+      "slug": "essentuki",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Железнодорожный",
+      "url": "https://www.b17.ru/psiholog/jeleznodorojnyy/",
+      "slug": "jeleznodorojnyy",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Жуковский",
+      "url": "https://www.b17.ru/psiholog/jukovskiy/",
+      "slug": "jukovskiy",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Запорожье",
+      "url": "https://www.b17.ru/psiholog/zaporoje/",
+      "slug": "zaporoje",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Звенигород",
+      "url": "https://www.b17.ru/psiholog/zvenigorod/",
+      "slug": "zvenigorod",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Зеленоград",
+      "url": "https://www.b17.ru/psiholog/zelenograd/",
+      "slug": "zelenograd",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Иваново",
+      "url": "https://www.b17.ru/psiholog/ivanovo/",
+      "slug": "ivanovo",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ивантеевка",
+      "url": "https://www.b17.ru/psiholog/ivanteevka/",
+      "slug": "ivanteevka",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ижевск",
+      "url": "https://www.b17.ru/psiholog/ijevsk/",
+      "slug": "ijevsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Иркутск",
+      "url": "https://www.b17.ru/psiholog/irkutsk/",
+      "slug": "irkutsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Истра",
+      "url": "https://www.b17.ru/psiholog/istra/",
+      "slug": "istra",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Йошкар-Ола",
+      "url": "https://www.b17.ru/psiholog/yoshkar-ola/",
+      "slug": "yoshkar-ola",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Калининград",
+      "url": "https://www.b17.ru/psiholog/kaliningrad/",
+      "slug": "kaliningrad",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Калуга",
+      "url": "https://www.b17.ru/psiholog/kaluga/",
+      "slug": "kaluga",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Каменск-Уральский",
+      "url": "https://www.b17.ru/psiholog/kamensk-uralskiy/",
+      "slug": "kamensk-uralskiy",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Караганда",
+      "url": "https://www.b17.ru/psiholog/karaganda/",
+      "slug": "karaganda",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Кемерово",
+      "url": "https://www.b17.ru/psiholog/kemerovo/",
+      "slug": "kemerovo",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Керчь",
+      "url": "https://www.b17.ru/psiholog/kerch/",
+      "slug": "kerch",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Киев",
+      "url": "https://www.b17.ru/psiholog/kiev/",
+      "slug": "kiev",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Киров",
+      "url": "https://www.b17.ru/psiholog/kirov/",
+      "slug": "kirov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Кисловодск",
+      "url": "https://www.b17.ru/psiholog/kislovodsk/",
+      "slug": "kislovodsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Кишинёв",
+      "url": "https://www.b17.ru/psiholog/kishinev/",
+      "slug": "kishinev",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Клин",
+      "url": "https://www.b17.ru/psiholog/klin/",
+      "slug": "klin",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ковров",
+      "url": "https://www.b17.ru/psiholog/kovrov/",
+      "slug": "kovrov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Коломна",
+      "url": "https://www.b17.ru/psiholog/kolomna/",
+      "slug": "kolomna",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Комсомольск-на-Амуре",
+      "url": "https://www.b17.ru/psiholog/komsomolsk-na-amure/",
+      "slug": "komsomolsk-na-amure",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Королёв",
+      "url": "https://www.b17.ru/psiholog/korolev/",
+      "slug": "korolev",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Костанай",
+      "url": "https://www.b17.ru/psiholog/kostanay/",
+      "slug": "kostanay",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Кострома",
+      "url": "https://www.b17.ru/psiholog/kostroma/",
+      "slug": "kostroma",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Краков",
+      "url": "https://www.b17.ru/psiholog/krakov/",
+      "slug": "krakov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Красногорск",
+      "url": "https://www.b17.ru/psiholog/krasnogorsk/",
+      "slug": "krasnogorsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Красноярск",
+      "url": "https://www.b17.ru/psiholog/krasnoyarsk/",
+      "slug": "krasnoyarsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Курган",
+      "url": "https://www.b17.ru/psiholog/kurgan/",
+      "slug": "kurgan",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Курск",
+      "url": "https://www.b17.ru/psiholog/kursk/",
+      "slug": "kursk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Лида",
+      "url": "https://www.b17.ru/psiholog/lida/",
+      "slug": "lida",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Лимассол",
+      "url": "https://www.b17.ru/psiholog/limassol/",
+      "slug": "limassol",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Липецк",
+      "url": "https://www.b17.ru/psiholog/lipetsk/",
+      "slug": "lipetsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Лиссабон",
+      "url": "https://www.b17.ru/psiholog/lissabon/",
+      "slug": "lissabon",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Лобня",
+      "url": "https://www.b17.ru/psiholog/lobnya/",
+      "slug": "lobnya",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Лондон",
+      "url": "https://www.b17.ru/psiholog/london/",
+      "slug": "london",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Луганск",
+      "url": "https://www.b17.ru/psiholog/lugansk/",
+      "slug": "lugansk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Люберцы",
+      "url": "https://www.b17.ru/psiholog/lyubertsy/",
+      "slug": "lyubertsy",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Магнитогорск",
+      "url": "https://www.b17.ru/psiholog/magnitogorsk/",
+      "slug": "magnitogorsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Майкоп",
+      "url": "https://www.b17.ru/psiholog/maykop/",
+      "slug": "maykop",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Мариуполь",
+      "url": "https://www.b17.ru/psiholog/mariupol/",
+      "slug": "mariupol",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Махачкала",
+      "url": "https://www.b17.ru/psiholog/mahachkala/",
+      "slug": "mahachkala",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Миасс",
+      "url": "https://www.b17.ru/psiholog/miass/",
+      "slug": "miass",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Минеральные Воды",
+      "url": "https://www.b17.ru/psiholog/mineralnye_vody/",
+      "slug": "mineralnye_vody",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Михайловск",
+      "url": "https://www.b17.ru/psiholog/mihaylovsk/",
+      "slug": "mihaylovsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Могилёв",
+      "url": "https://www.b17.ru/psiholog/mogilv/",
+      "slug": "mogilv",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Молодечно",
+      "url": "https://www.b17.ru/psiholog/molodechno/",
+      "slug": "molodechno",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Мурманск",
+      "url": "https://www.b17.ru/psiholog/murmansk/",
+      "slug": "murmansk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Муром",
+      "url": "https://www.b17.ru/psiholog/murom/",
+      "slug": "murom",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Мытищи",
+      "url": "https://www.b17.ru/psiholog/mytischi/",
+      "slug": "mytischi",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Мюнхен",
+      "url": "https://www.b17.ru/psiholog/myunhen/",
+      "slug": "myunhen",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Набережные Челны",
+      "url": "https://www.b17.ru/psiholog/naberejnye_chelny/",
+      "slug": "naberejnye_chelny",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нальчик",
+      "url": "https://www.b17.ru/psiholog/nalchik/",
+      "slug": "nalchik",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Наро-Фоминск",
+      "url": "https://www.b17.ru/psiholog/naro-fominsk/",
+      "slug": "naro-fominsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Находка",
+      "url": "https://www.b17.ru/psiholog/nahodka/",
+      "slug": "nahodka",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Невинномысск",
+      "url": "https://www.b17.ru/psiholog/nevinnomyssk/",
+      "slug": "nevinnomyssk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нефтекамск",
+      "url": "https://www.b17.ru/psiholog/neftekamsk/",
+      "slug": "neftekamsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нефтеюганск",
+      "url": "https://www.b17.ru/psiholog/nefteyugansk/",
+      "slug": "nefteyugansk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нижневартовск",
+      "url": "https://www.b17.ru/psiholog/nijnevartovsk/",
+      "slug": "nijnevartovsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нижнекамск",
+      "url": "https://www.b17.ru/psiholog/nijnekamsk/",
+      "slug": "nijnekamsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нижний Тагил",
+      "url": "https://www.b17.ru/psiholog/nijniy_tagil/",
+      "slug": "nijniy_tagil",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нови Сад",
+      "url": "https://www.b17.ru/psiholog/novi_sad/",
+      "slug": "novi_sad",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новокузнецк",
+      "url": "https://www.b17.ru/psiholog/novokuznetsk/",
+      "slug": "novokuznetsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новомосковск",
+      "url": "https://www.b17.ru/psiholog/novomoskovsk/",
+      "slug": "novomoskovsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новополоцк",
+      "url": "https://www.b17.ru/psiholog/novopolotsk/",
+      "slug": "novopolotsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новороссийск",
+      "url": "https://www.b17.ru/psiholog/novorossiysk/",
+      "slug": "novorossiysk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новочебоксарск",
+      "url": "https://www.b17.ru/psiholog/novocheboksarsk/",
+      "slug": "novocheboksarsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новочеркасск",
+      "url": "https://www.b17.ru/psiholog/novocherkassk/",
+      "slug": "novocherkassk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Новый Уренгой",
+      "url": "https://www.b17.ru/psiholog/novyy_urengoy/",
+      "slug": "novyy_urengoy",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ногинск",
+      "url": "https://www.b17.ru/psiholog/noginsk/",
+      "slug": "noginsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Норильск",
+      "url": "https://www.b17.ru/psiholog/norilsk/",
+      "slug": "norilsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Нячанг",
+      "url": "https://www.b17.ru/psiholog/nyachang/",
+      "slug": "nyachang",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Обнинск",
+      "url": "https://www.b17.ru/psiholog/obninsk/",
+      "slug": "obninsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Одесса",
+      "url": "https://www.b17.ru/psiholog/odessa/",
+      "slug": "odessa",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Одинцово",
+      "url": "https://www.b17.ru/psiholog/odintsovo/",
+      "slug": "odintsovo",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Озерск",
+      "url": "https://www.b17.ru/psiholog/ozersk/",
+      "slug": "ozersk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Омск",
+      "url": "https://www.b17.ru/psiholog/omsk/",
+      "slug": "omsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Оренбург",
+      "url": "https://www.b17.ru/psiholog/orenburg/",
+      "slug": "orenburg",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Орехово-Зуево",
+      "url": "https://www.b17.ru/psiholog/orehovo-zuevo/",
+      "slug": "orehovo-zuevo",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Орёл",
+      "url": "https://www.b17.ru/psiholog/orl/",
+      "slug": "orl",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Орск",
+      "url": "https://www.b17.ru/psiholog/orsk/",
+      "slug": "orsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Павловский Посад",
+      "url": "https://www.b17.ru/psiholog/pavlovskiy_posad/",
+      "slug": "pavlovskiy_posad",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Павлодар",
+      "url": "https://www.b17.ru/psiholog/pavlodar/",
+      "slug": "pavlodar",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Париж",
+      "url": "https://www.b17.ru/psiholog/parij/",
+      "slug": "parij",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Пенза",
+      "url": "https://www.b17.ru/psiholog/penza/",
+      "slug": "penza",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Первоуральск",
+      "url": "https://www.b17.ru/psiholog/pervouralsk/",
+      "slug": "pervouralsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Пермь",
+      "url": "https://www.b17.ru/psiholog/perm/",
+      "slug": "perm",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Петрозаводск",
+      "url": "https://www.b17.ru/psiholog/petrozavodsk/",
+      "slug": "petrozavodsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Петропавловск-Камчатский",
+      "url": "https://www.b17.ru/psiholog/petropavlovsk-kamchatskiy/",
+      "slug": "petropavlovsk-kamchatskiy",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Пинск",
+      "url": "https://www.b17.ru/psiholog/pinsk/",
+      "slug": "pinsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Подольск",
+      "url": "https://www.b17.ru/psiholog/podolsk/",
+      "slug": "podolsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Познань",
+      "url": "https://www.b17.ru/psiholog/poznan/",
+      "slug": "poznan",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Полоцк",
+      "url": "https://www.b17.ru/psiholog/polotsk/",
+      "slug": "polotsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Прага",
+      "url": "https://www.b17.ru/psiholog/praga/",
+      "slug": "praga",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Псков",
+      "url": "https://www.b17.ru/psiholog/pskov/",
+      "slug": "pskov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Пушкин",
+      "url": "https://www.b17.ru/psiholog/pushkin/",
+      "slug": "pushkin",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Пушкино",
+      "url": "https://www.b17.ru/psiholog/pushkino/",
+      "slug": "pushkino",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Пхукет",
+      "url": "https://www.b17.ru/psiholog/phuket/",
+      "slug": "phuket",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Пятигорск",
+      "url": "https://www.b17.ru/psiholog/pyatigorsk/",
+      "slug": "pyatigorsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Раменское",
+      "url": "https://www.b17.ru/psiholog/ramenskoe/",
+      "slug": "ramenskoe",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Реутов",
+      "url": "https://www.b17.ru/psiholog/reutov/",
+      "slug": "reutov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Рига",
+      "url": "https://www.b17.ru/psiholog/riga/",
+      "slug": "riga",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Рыбинск",
+      "url": "https://www.b17.ru/psiholog/rybinsk/",
+      "slug": "rybinsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Рязань",
+      "url": "https://www.b17.ru/psiholog/ryazan/",
+      "slug": "ryazan",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Самара",
+      "url": "https://www.b17.ru/psiholog/samara/",
+      "slug": "samara",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Саранск",
+      "url": "https://www.b17.ru/psiholog/saransk/",
+      "slug": "saransk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Саратов",
+      "url": "https://www.b17.ru/psiholog/saratov/",
+      "slug": "saratov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Саров",
+      "url": "https://www.b17.ru/psiholog/sarov/",
+      "slug": "sarov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Севастополь",
+      "url": "https://www.b17.ru/psiholog/sevastopol/",
+      "slug": "sevastopol",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Северодвинск",
+      "url": "https://www.b17.ru/psiholog/severodvinsk/",
+      "slug": "severodvinsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Северск",
+      "url": "https://www.b17.ru/psiholog/seversk/",
+      "slug": "seversk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Сергиев Посад",
+      "url": "https://www.b17.ru/psiholog/sergiev_posad/",
+      "slug": "sergiev_posad",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Серпухов",
+      "url": "https://www.b17.ru/psiholog/serpuhov/",
+      "slug": "serpuhov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Симферополь",
+      "url": "https://www.b17.ru/psiholog/simferopol/",
+      "slug": "simferopol",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Славянск-на-Кубани",
+      "url": "https://www.b17.ru/psiholog/slavyansk-na-kubani/",
+      "slug": "slavyansk-na-kubani",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Смоленск",
+      "url": "https://www.b17.ru/psiholog/smolensk/",
+      "slug": "smolensk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Солигорск",
+      "url": "https://www.b17.ru/psiholog/soligorsk/",
+      "slug": "soligorsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Солнечногорск",
+      "url": "https://www.b17.ru/psiholog/solnechnogorsk/",
+      "slug": "solnechnogorsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Сосновый Бор",
+      "url": "https://www.b17.ru/psiholog/sosnovyy_bor/",
+      "slug": "sosnovyy_bor",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Сочи",
+      "url": "https://www.b17.ru/psiholog/sochi/",
+      "slug": "sochi",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ставрополь",
+      "url": "https://www.b17.ru/psiholog/stavropol/",
+      "slug": "stavropol",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Стамбул",
+      "url": "https://www.b17.ru/psiholog/stanbul/",
+      "slug": "stanbul",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Старый Оскол",
+      "url": "https://www.b17.ru/psiholog/staryy_oskol/",
+      "slug": "staryy_oskol",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Стерлитамак",
+      "url": "https://www.b17.ru/psiholog/sterlitamak/",
+      "slug": "sterlitamak",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ступино",
+      "url": "https://www.b17.ru/psiholog/stupino/",
+      "slug": "stupino",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Сургут",
+      "url": "https://www.b17.ru/psiholog/surgut/",
+      "slug": "surgut",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Сызрань",
+      "url": "https://www.b17.ru/psiholog/syzran/",
+      "slug": "syzran",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Сыктывкар",
+      "url": "https://www.b17.ru/psiholog/syktyvkar/",
+      "slug": "syktyvkar",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Таганрог",
+      "url": "https://www.b17.ru/psiholog/taganrog/",
+      "slug": "taganrog",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Таллин",
+      "url": "https://www.b17.ru/psiholog/tallin/",
+      "slug": "tallin",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тамбов",
+      "url": "https://www.b17.ru/psiholog/tambov/",
+      "slug": "tambov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ташкент",
+      "url": "https://www.b17.ru/psiholog/tashkent/",
+      "slug": "tashkent",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тбилиси",
+      "url": "https://www.b17.ru/psiholog/tbilisi/",
+      "slug": "tbilisi",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тверь",
+      "url": "https://www.b17.ru/psiholog/tver/",
+      "slug": "tver",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тель-Авив",
+      "url": "https://www.b17.ru/psiholog/tel-aviv/",
+      "slug": "tel-aviv",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тирасполь",
+      "url": "https://www.b17.ru/psiholog/tiraspol/",
+      "slug": "tiraspol",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тольятти",
+      "url": "https://www.b17.ru/psiholog/tolyatti/",
+      "slug": "tolyatti",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Томск",
+      "url": "https://www.b17.ru/psiholog/tomsk/",
+      "slug": "tomsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Троицк",
+      "url": "https://www.b17.ru/psiholog/troitsk/",
+      "slug": "troitsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Туапсе",
+      "url": "https://www.b17.ru/psiholog/tuapse/",
+      "slug": "tuapse",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тула",
+      "url": "https://www.b17.ru/psiholog/tula/",
+      "slug": "tula",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Тюмень",
+      "url": "https://www.b17.ru/psiholog/tyumen/",
+      "slug": "tyumen",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Улан-Удэ",
+      "url": "https://www.b17.ru/psiholog/ulan-ude/",
+      "slug": "ulan-ude",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ульяновск",
+      "url": "https://www.b17.ru/psiholog/ulyanovsk/",
+      "slug": "ulyanovsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Уссурийск",
+      "url": "https://www.b17.ru/psiholog/ussuriysk/",
+      "slug": "ussuriysk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Усть-Каменогорск",
+      "url": "https://www.b17.ru/psiholog/ust-kamenogorsk/",
+      "slug": "ust-kamenogorsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Уфа",
+      "url": "https://www.b17.ru/psiholog/ufa/",
+      "slug": "ufa",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Феодосия",
+      "url": "https://www.b17.ru/psiholog/feodosiya/",
+      "slug": "feodosiya",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Фрязино",
+      "url": "https://www.b17.ru/psiholog/fryazino/",
+      "slug": "fryazino",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Хабаровск",
+      "url": "https://www.b17.ru/psiholog/habarovsk/",
+      "slug": "habarovsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Хайфа",
+      "url": "https://www.b17.ru/psiholog/hayfa/",
+      "slug": "hayfa",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ханты-Мансийск",
+      "url": "https://www.b17.ru/psiholog/hanty-mansiysk/",
+      "slug": "hanty-mansiysk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Харьков",
+      "url": "https://www.b17.ru/psiholog/harkov/",
+      "slug": "harkov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Хельсинки",
+      "url": "https://www.b17.ru/psiholog/helsinki/",
+      "slug": "helsinki",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Химки",
+      "url": "https://www.b17.ru/psiholog/himki/",
+      "slug": "himki",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Чебоксары",
+      "url": "https://www.b17.ru/psiholog/cheboksary/",
+      "slug": "cheboksary",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Челябинск",
+      "url": "https://www.b17.ru/psiholog/chelyabinsk/",
+      "slug": "chelyabinsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Череповец",
+      "url": "https://www.b17.ru/psiholog/cherepovets/",
+      "slug": "cherepovets",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Черкесск",
+      "url": "https://www.b17.ru/psiholog/cherkessk/",
+      "slug": "cherkessk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Чехов",
+      "url": "https://www.b17.ru/psiholog/chehov/",
+      "slug": "chehov",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Чита",
+      "url": "https://www.b17.ru/psiholog/chita/",
+      "slug": "chita",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Шахты",
+      "url": "https://www.b17.ru/psiholog/shahty/",
+      "slug": "shahty",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Щёлково",
+      "url": "https://www.b17.ru/psiholog/schelkovo/",
+      "slug": "schelkovo",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Электросталь",
+      "url": "https://www.b17.ru/psiholog/elektrostal/",
+      "slug": "elektrostal",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Энгельс",
+      "url": "https://www.b17.ru/psiholog/engels/",
+      "slug": "engels",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Южно-Сахалинск",
+      "url": "https://www.b17.ru/psiholog/yujno-sahalinsk/",
+      "slug": "yujno-sahalinsk",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ялта",
+      "url": "https://www.b17.ru/psiholog/yalta/",
+      "slug": "yalta",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "Ярославль",
+      "url": "https://www.b17.ru/psiholog/yaroslavl/",
+      "slug": "yaroslavl",
+      "evidence": "city_catalog_link"
+    },
+    {
+      "label": "о. Бали",
+      "url": "https://www.b17.ru/psiholog/bali/",
+      "slug": "bali",
+      "evidence": "city_catalog_link"
+    }
+  ],
+  "selection_check": {
+    "requested_query": {},
+    "note": "Публичный справочник не содержит пользовательских выборов. Применение фильтров проверяется командами inspect/crawl."
+  }
+}

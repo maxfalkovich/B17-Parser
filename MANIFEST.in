@@ -1,0 +1,17 @@
+include README.md FILTERS.md LICENSE pyproject.toml .gitignore MANIFEST.in
+recursive-include b17_parser *.py
+recursive-include scripts *.py
+recursive-include tests *.py *.html
+recursive-include references *.json
+recursive-include .github *.yml
+prune examples
+include examples/README.md
+include examples/profiles.sample.jsonl
+include examples/profiles.sample.json
+include examples/profiles.sample.csv
+prune work
+prune data
+prune .venv
+prune build
+prune dist
+global-exclude __pycache__ *.py[cod] .DS_Store *.sqlite *.sqlite3 *.db *.state.json *.report.json *.errors.jsonl
